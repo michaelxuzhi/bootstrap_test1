@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap_test1</title>
+
+    <!-- Bootstrap -->
+    <link href="out_js/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+</head>
+<body>
+<!--头部-->
+<header id="lk_header">
+<!--上部分-->
+    <div class="top-bar hidden-sm hidden-xs text-center text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="top-bar1 col-md-2">
+                    <a href="">
+                        <i class="icon-phone"></i>
+                        <span>关注微信号</span>
+                        <span class="caret"></span>
+                        <img src="./imgs/QR.jpg" alt="QRCode" width="130">
+                    </a>
+                </div>
+                <div class="top-bar2 col-md-5">
+                    <i class="icon-tel"></i>
+                    <span>8888-555-666(服务时间：9：00-21：00)</span>
+                </div>
+                <div class="top-bar3 col-md-2 text-muted">
+                    <a href="" class="text-muted">校企合作</a>
+                    <a href="" class="text-muted">培训师</a>
+                </div>
+                <div class="top-bar4 col-md-3">
+                    <a href="#" class="btn btn-register" role="button">免费注册</a>
+                    <a href="#" class="text-muted" style="margin-left: 10px" role="button">立即登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--下部分-->
+    <nav class="navbar navbar-default navbar-static-top navbar-lk">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#lk_nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./imgs/logo.png" alt="标志" width="136">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="lk_nav">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="javascript:;">关于我们</a></li>
+                    <li><a href="javascript:;">课程介绍</a></li>
+                    <li><a href="javascript:;">热门课程</a></li>
+                    <li><a href="javascript:;">名师授课</a></li>
+                    <li><a href="javascript:;">课堂互动</a></li>
+                    <li><a href="javascript:;">联系我们</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                    <li><a href="#">个人中心</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<!--/头部-->
+
+<!--轮播图-->
+<section id="lk_carousel" class="carousel slide" data-ride="carousel">
+
+        <!-- 指示器 -->
+        <ol class="carousel-indicators">
+            <li data-target="lk_carousel" data-slide-to="0" class="active"></li>
+            <li data-target="lk_carousel" data-slide-to="1"></li>
+            <li data-target="lk_carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- 轮播内容 -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" data-sm-img="imgs/1_s.jpg" data-lg-img="imgs/1.jpg">
+
+            </div>
+            <div class="item" data-sm-img="imgs/2_s.jpg" data-lg-img="imgs/2.jpg">
+
+            </div>
+            <div class="item" data-sm-img="imgs/3_s.jpg" data-lg-img="imgs/3.jpg">
+
+            </div>
+        </div>
+
+        <!-- 左右控制 -->
+        <a class="left carousel-control" href="#lk_carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<!--            <span class="sr-only">Previous</span> 屏幕阅读器，针对视力障碍人群-->
+        </a>
+        <a class="right carousel-control" href="#lk_carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<!--            <span class="sr-only">Next</span>  屏幕阅读器，针对视力障碍人群-->
+        </a>
+</section>
+<!--/轮播图-->
+
+<!--关于我们-->
+<section id="lk_about" class="hidden-xs hidden-sm">
+    <!--标题-->
+    <div class="title text-center">
+        <h1><strong>关于我们</strong></h1>
+        <img class="img-responsive" src="imgs/star.png" alt="star" width="50" style="margin: 0 auto;">
+    </div>
+    <!--主要内容-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="text-muted">生活有检验真理的绝活,筛去言不由衷的话语，我们可能已所剩不多，诚心诚意地做，心与心，面对面，对所爱之人,大声清晰地说：不要屈服于软弱！</p>
+                <p class="text-muted">当你发现命中注定，你会思考人到底怎样活，永不放弃，战胜迷惑，坚持到底，即是解脱。</p>
+                <p class="text-muted">生活在现在与未来之间， 我们只有现时现在地过，所有的人,团结一致，齐心生活。</p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive" src="imgs/team.jpg" alt="核心团队">
+            </div>
+        </div>
+    </div>
+</section>
+<!--/关于我们-->
+
+<!--产品特色-->
+<section id="lk_product">
+   <div class="container">
+       <div class="row">
+        <!-- 头部选项卡 -->
+           <div style="overflow: auto">
+               <ul class="nav nav-tabs" role="tablist">
+                   <li role="presentation" class="active"><a href="#product1" aria-controls="home" role="tab" data-toggle="tab">在线大学</a></li>
+                   <li role="presentation"><a href="#product2" aria-controls="profile" role="tab" data-toggle="tab">会员专享</a></li>
+                   <li role="presentation"><a href="#product3" aria-controls="messages" role="tab" data-toggle="tab">优质视频</a></li>
+
+                   <li class="pull-right hidden-xs hidden-sm"><a href="#product4" aria-controls="settings" role="tab" data-toggle="tab">更多</a></li>
+               </ul>
+           </div>
+
+
+        <!-- 展示的内容 -->
+       <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="product1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 pd_left">
+                            <!--1-->
+                            <div id="pd_one_1" class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="imgs/QR.jpg" alt="QR" width="140">
+                                    </a>
+                                </div>
+                                <div class="media-body text-muted" style="padding-top: 100px">
+                                    <h5 class="media-heading">更多资讯欢迎</h5>
+                                    <h5 class="media-heading">关注我们</h5>
+                                </div>
+                            </div>
+                            <!--2-->
+                            <div id="pd_one_2">
+                                <ol class="breadcrumb lead">
+                                    <li><a href="#">HTML5+全栈</a></li>
+                                    <li><a href="#">Python+人工智能</a></li>
+                                    <li><a href="#">JavaEE</a></li>
+                                    <li><a href="#">Go语言+区块链</a></li>
+                                </ol>
+                            </div>
+                            <!--3-->
+                            <h1 class="pd_one_3">欢迎来到课程教学
+                                <strong class="text-danger">在线授课</strong>
+                            </h1>
+                            <!--4-->
+                            <div id="pd_one_4">
+                                <button class="btn btn-default btn-lg btn-primary" style="margin-right: 20px" type="submit">课程咨询</button>
+                                <button class="btn btn-default btn-lg" type="submit">了解更多</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4  hidden-sm hidden-xs">
+                            <img src="imgs/ipx_3.png" alt="1"  class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="product2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 hidden-sm hidden-xs">
+                            <img src="imgs/ipx_4.png" alt="2" class="img-responsive">
+                        </div>
+                        <div id="pd_two_1" class="col-md-8 pd_left">
+                            <h1 class="text-warning">专享会员</h1>
+                            <p class="lead">生活有检验真理的绝活,筛去言不由衷的话语，我们可能已所剩不多，诚心诚意地做，心与心，面对面，对所爱之人,大声清晰地说：不要屈服于软弱！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="product3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 pd_left">
+                            <h1 class="text-danger">
+                                <strong>
+                                    案例驱动·体系贯穿·全面系统
+                                </strong>
+                            </h1>
+                            <h3>
+                                10-15分钟的视频
+                                <span class="text-warning">知识点拆分讲解</span>
+                            </h3>
+                            <h4 class="text-muted" style="margin: 15px 0;">
+                                玩转HTML5+全栈系列，玩转Python+人工智能系列，玩转JavaEE系列，玩转Go+区块链系列
+                            </h4>
+                            <div class="badge" style="padding: 15px 10px; cursor: pointer;">
+                                已更新300+视频  |  10000+人订阅
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-sm hidden-xs">
+                            <img src="imgs/macbook.jpg" alt="3" class="img-responsive"></div>
+                        </div>
+                    </div>
+                </div>
+            <div role="tabpanel" class="tab-pane fade" id="product4">无</div>
+        </div>
+       </div>
+    </div>
+</section>
+<!--/产品特色-->
+
+<!--热门课程-->
+<section id="lk_hot">
+    <!--标题-->
+    <div class="title text-center">
+        <h1><strong>热门课程</strong></h1>
+        <img class="img-responsive" src="imgs/star.png" alt="star" width="50" style="margin: 0 auto;">
+    </div>
+    <!--内容-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/notebook.png" alt="head" width="100">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><span class="text-danger">【热】</span>从零玩转HTML5+跨平台</h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            李雷带你从零基础入门大前端开发！
+                        </p>
+                    </div>
+                    <div class="media-right text-danger">200节课</div>
+                </div>
+            </div>
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/notebook.png" alt="head" width="100">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><span class="text-danger">【热】</span>从零玩转HTML5+跨平台</h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            李雷带你从零基础入门大前端开发！
+                        </p>
+                    </div>
+                    <div class="media-right text-danger">206节课</div>
+                </div>
+            </div>
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/notebook.png" alt="head" width="100">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><span class="text-danger">【热】</span>从零玩转HTML5+跨平台</h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            李雷带你从零基础入门大前端开发！
+                        </p>
+                    </div>
+                    <div class="media-right text-danger">200节课</div>
+                </div>
+            </div>
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/notebook.png" alt="head" width="100">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><span class="text-danger">【热】</span>从零玩转HTML5+跨平台</h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            李雷带你从零基础入门大前端开发！
+                        </p>
+                    </div>
+                    <div class="media-right text-danger">200节课</div>
+                </div>
+            </div>
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/notebook.png" alt="head" width="100">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><span class="text-danger">【热】</span>从零玩转HTML5+跨平台</h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            李雷带你从零基础入门大前端开发！
+                        </p>
+                    </div>
+                    <div class="media-right text-danger">200节课</div>
+                </div>
+            </div>
+            <div class="col-md-6 lesson">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object img-responsive img-circle img-thumbnail" src="imgs/notebook.png" alt="head" width="100">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><span class="text-danger">【热】</span>从零玩转HTML5+跨平台</h4>
+                        <p class="text-muted" style="margin-top: 10px;">
+                            李雷带你从零基础入门大前端开发！
+                        </p>
+                    </div>
+                    <div class="media-right text-danger">206节课</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/热门课程-->
+
+<!--链接-->
+<header id="lk_link">
+    <!--标题-->
+    <div class="title text-center">
+        <h1><strong>友情链接</strong></h1>
+        <img class="img-responsive" src="imgs/star.png" alt="star" width="50" style="margin: 0 auto;">
+    </div>
+    <ul class="logos">
+        <li><a href="#"><img src="imgs/scc.png" alt="n" width="150"></a></li>
+        <li><a href="#"><img src="imgs/kingston.png" alt="n" width="150"></a></li>
+        <li><a href="#"><img src="imgs/vasa.png" alt="n" width="150"></a></li>
+        <li><a href="#"><img src="imgs/msc.png" alt="n" width="150"></a></li>
+        <li><a href="#"><img src="imgs/stant.jpg" alt="n" width="150"></a></li>
+        <li><a href="#"><img src="imgs/sbs.jpg" alt="n" width="150"></a></li>
+    </ul>
+</header>
+<!--/链接-->
+
+<!--尾部-->
+<footer id="lk_footer">
+    <div class="container">
+        <div class="row" style="padding-top: 20px;">
+            <div class="col-md-3 col-md-offset-1 one">
+                <div class="row">
+                    <ul class="col-md-6">
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">课程介绍</a></li>
+                        <li><a href="">热门课程</a></li>
+                    </ul>
+                    <ul class="col-md-6">
+                        <li><a href="">名师授课</a></li>
+                        <li><a href="">课堂互动</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 two">
+                <h5>公司地址：广东省广州市广州塔</h5>
+                <h5>联系电话：888-8888888</h5>
+                <h5>公司邮箱：xxxxxxx@yy.com</h5>
+            </div>
+            <div class="col-md-3 three">
+                <h5>联系我们</h5>
+                <a href="">
+                    <img src="imgs/weixin_128.png" alt="" data-toggle="tooltip" data-placement="bottom" title="关注微信" width="50">
+                    <img src="imgs/weibo_128.png" alt="" data-toggle="tooltip" data-placement="bottom" title="关注微博" width="46">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--/尾部-->
+
+
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="out_js/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="out_js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<!-- 加载自己写的js文件-->
+<script src="js/index.js"></script>
+</body>
+</html>
